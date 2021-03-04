@@ -1,0 +1,15 @@
+# default dockerignore for Django projects
+*.pyc
+*.pyo
+*.mo
+*.css.map
+*.egg-info
+*.sql.gz
+.cache
+.project
+.pydevproject
+.git/
+__pycache__
+Dockerfile*
+docker-compose*
+README.md
