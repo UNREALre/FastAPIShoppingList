@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI
 
-from app.api import ping
+from app.routers import ping, users
 from app.db import database
 
 
@@ -21,3 +21,4 @@ async def shutdown():
 
 
 app.include_router(ping.router)
+app.include_router(users.router)

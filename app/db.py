@@ -10,8 +10,5 @@ DB_HOST = environ.get("DB_HOST", "localhost")
 DB_NAME = environ.get("DB_NAME", "localhost")
 DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:5432/{DB_NAME}"
 
-print("!!!")
-print(DATABASE_URL)
-
 # databases query builder
 database = Database(DATABASE_URL)
