@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import asyncio
-import pytest
-
 from fastapi.testclient import TestClient
-
-from app.utils.users import create_user_token
 
 
 def get_user_token(client: TestClient, user_data):
